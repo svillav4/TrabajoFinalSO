@@ -1,0 +1,26 @@
+1
+
+
+new 5
+new 3 1
+new 4 2
+run 10
+ps
+stats
+
+
+modo sjf
+new 6
+new 2
+new 4
+run 10
+ps
+
+
+modo rr
+new 5
+run 5
+ps
+
+
+exit

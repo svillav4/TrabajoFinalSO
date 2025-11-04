@@ -1,0 +1,44 @@
+1
+
+
+new 4
+new 2
+new 3
+
+
+print 1 Reporte de rendimiento
+print 2 Documento del sistema
+print 1 Segundo trabajo del proceso 1
+printstat
+printproc
+printproc
+printstat
+printproc
+
+
+io disco 1 3 1
+io red 2 2 2
+iostat
+iotick
+iotick
+iostat
+
+
+filosofos 5 3
+
+
+produce 10
+produce 20
+produce 30
+consume
+consume
+produce 40
+bufstat
+
+
+disk fcfs
+disk sstf
+disk scan
+
+
+exit
