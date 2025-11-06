@@ -18,7 +18,6 @@ using namespace std;
 void procesar_comando(const string &comando);
 
 
-// ------------------------- PCB -------------------------
 struct Proceso {
     int id_proceso;
     int tiempo_requerido;
@@ -629,7 +628,7 @@ public:
 
         if (proceso->estado != "BLOQUEADO") {
             proceso->estado = "EJECUTANDO";
-            cout << "[Filosofo " << id << "] Comiendo 🍝\n";
+            cout << "[Filosofo " << id << "] Comiendo\n";
             this_thread::sleep_for(chrono::milliseconds(300));
 
             tenedor_izq->signal();
@@ -1010,7 +1009,7 @@ int main() {
          << "  mem <pid> <pag>                  -> acceder pagina (usa GestorMarcos)\n"
          << "  memmode <fifo|lru|ws> [marcos]   -> cambia politica y opcional marcos\n"
          << "  filosofos                        -> simular la cena de los filosofos\n"
-         << "  impresora <pid> <texto>          -> proceso solicita imprimir\n"
+         << "  print <pid> <texto>              -> proceso solicita imprimir\n"
          << "  printproc                        -> impresora procesa un trabajo\n"
          << "  printstat                        -> mostrar estado actual de la cola\n"
          << "  memstat                          -> mostrar estado memoria\n"
